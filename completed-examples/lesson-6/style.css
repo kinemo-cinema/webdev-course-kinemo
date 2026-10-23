@@ -1,0 +1,135 @@
+/* ============================================================
+   Lección 6 — Solución del reto
+   ------------------------------------------------------------
+   Este archivo corrige los 5 errores del CSS inicial.
+   Los 4 errores del HTML están documentados en index.html.
+
+   Errores corregidos aquí:
+   #1. .card-header img → faltaban las unidades px en width/height
+   #2. .card-header h2  → faltaba el ':' después de 'margin'
+   #3. .type            → 'colour' no es una propiedad CSS válida
+   #4. .card ul         → faltaba la llave de cierre '}'
+   #5. .card-electico   → faltaba la 'r' en 'card-electrico'
+   ============================================================ */
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #eef1f5;
+    text-align: center;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+/* Tarjeta del Pokémon */
+.card {
+    background: white;
+    border-top: 6px solid #cccccc;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Encabezado de la tarjeta */
+.card-header {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.card-header img {
+    width: 120px;                       /* ✅ Bug #1: agregada la unidad px */
+    height: 120px;                      /* ✅ Bug #1: agregada la unidad px */
+}
+
+.card-header h2 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin: 5px 0 8px;                  /* ✅ Bug #2: agregados los dos puntos */
+}
+
+.level {
+    font-size: 14px;
+    color: #7f8c8d;
+    font-weight: normal;
+}
+
+/* Etiquetas de tipo */
+.type {
+    display: inline-block;
+    color: white;                       /* ✅ Bug #3: 'colour' → 'color' */
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin: 0 2px;
+}
+
+/* Subtítulos de las secciones */
+.card h3 {
+    font-size: 12px;
+    color: #95a5a6;
+    text-transform: uppercase;
+    margin: 12px 0 5px 0;
+    text-align: left;
+}
+
+.card-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #34495e;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Listas generales */
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}                                       /* ✅ Bug #4: agregada la llave de cierre */
+
+.card-stats ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.card-stats li {
+    text-align: left;
+}
+
+.card-stats span {
+    color: #7f8c8d;
+    font-weight: bold;
+}
+
+/* Movimientos */
+.card-moves ul {
+    text-align: left;
+    background-color: #f8f9fa;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.card-moves li {
+    padding: 2px 0;
+}
+
+/* Colores por tipo (solo Eléctrico en esta lección) */
+.card-electrico {                       /* ✅ Bug #5: 'card-electico' → 'card-electrico' */
+    border-top-color: #f1c40f;
+}
+
+.type-electrico {
+    background-color: #f1c40f;
+}
