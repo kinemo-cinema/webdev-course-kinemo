@@ -1,0 +1,30 @@
+/* Cambia el fondo y la fuente de la página */
+body {
+}
+
+/* Estiliza la tarjeta del Pokémon */
+.card {
+}
+
+/* Pon el borde superior del color del tipo Eléctrico */
+/* Pista: usa border-top: 6px solid #f1c40f; */
+
+/* Ajusta el tamaño de la imagen */
+.card img {
+}
+
+/* Cambia el color y tamaño del nombre del Pokémon */
+.card h1 {
+}
+
+/* Estiliza el nivel (Nv. 50) en un color más claro */
+.level {
+}
+
+/* Da estilo a los subtítulos (Habilidad, Estadísticas, Movimientos) */
+.card h2 {
+}
+
+/* Da estilo a las listas de estadísticas y movimientos */
+.card ul {
+}
