@@ -1,5 +1,7 @@
-## Proyecto final del curso
+# Fundamentos de Desarrollo Web
 
-Al terminar las 6 lecciones, los estudiantes tendrán una página de equipo Pokémon.
+Curso introductorio de HTML y CSS para estudiantes de secundaria.
 
-👉 [Ver el resultado final](completed-examples/lesson-5/index.html)
+- **Course plan:** [course-plan.md](course-plan.md)
+- **Starter files:** `/starter-files`
+- **Completed examples:** `/completed-examples`
