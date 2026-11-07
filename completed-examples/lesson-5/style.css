@@ -1,0 +1,161 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #eef1f5;
+    text-align: center;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* Contenedor del equipo */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Tarjeta base */
+.card {
+    background: white;
+    border-top: 6px solid #cccccc;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px; /* Ligeramente más ancha */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Encabezado de la tarjeta */
+.card-header {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.card-header img {
+    width: 120px;
+    height: 120px;
+}
+
+.card-header h2 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin: 5px 0 8px;
+}
+
+.level {
+    font-size: 14px;
+    color: #7f8c8d;
+    font-weight: normal;
+}
+
+/* Etiquetas de tipo */
+.type {
+    display: inline-block;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin: 0 2px;
+}
+
+/* Subtítulos de las secciones (Habilidad, Stats, Movimientos) */
+.card h3 {
+    font-size: 12px;
+    color: #95a5a6;
+    text-transform: uppercase;
+    margin: 12px 0 5px 0;
+    text-align: left;
+}
+
+.card-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #34495e;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Listas generales */
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Grid para las Estadísticas (2 columnas) */
+.card-stats ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.card-stats li {
+    text-align: left;
+}
+
+.card-stats span {
+    color: #7f8c8d;
+    font-weight: bold;
+}
+
+/* Movimientos */
+.card-moves ul {
+    text-align: left;
+    background-color: #f8f9fa;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.card-moves li {
+    padding: 2px 0;
+}
+
+/* Colores por tipo de Pokémon */
+.card-fuego   { border-top-color: #e74c3c; }
+.type-fuego   { background-color: #e74c3c; }
+
+.card-agua    { border-top-color: #3498db; }
+.type-agua    { background-color: #3498db; }
+
+.card-planta  { border-top-color: #27ae60; }
+.type-planta  { background-color: #27ae60; }
+
+.card-electrico { border-top-color: #f1c40f; }
+.type-electrico { background-color: #f1c40f; }
+
+.card-fantasma  { border-top-color: #8e44ad; }
+.type-fantasma  { background-color: #8e44ad; }
+
+.card-dragon    { border-top-color: #34495e; }
+.type-dragon    { background-color: #34495e; }
+
+.card-veneno    { border-top-color: #9b59b6; }
+.type-veneno    { background-color: #9b59b6; }
+
+.type-volador   { background-color: #95a5a6; }
+
+.footer {
+    margin-top: 30px;
+    color: #95a5a6;
+    font-size: 13px;
+}
